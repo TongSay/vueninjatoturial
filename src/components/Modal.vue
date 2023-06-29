@@ -1,8 +1,12 @@
 <template>
     <div class="backdrop" @click.self="closeModal()">
         <div class="modal">
-            <h1>{{header}}</h1>
-            <p>{{ text }}</p>
+            <!-- <h1>{{header}}</h1>
+            <p>{{ text }}</p> -->
+            <slot></slot>
+            <div class="actions">
+                <slot name="links" ></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -34,10 +38,21 @@
         width: 100%;
         height: 100%;
     }
-    h1{
+    .modal h1{
         color:aqua;
         border: none;
         padding: 0;
+    }
+    .modal p {
+        font-style: normal;
+    }
+    .modal .actions a {
+        color: #333;
+        padding: 8px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 10px;
     }
 </style>
 
