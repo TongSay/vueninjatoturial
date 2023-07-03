@@ -39,6 +39,7 @@
         height: 100%;
     }
     .modal h1{
+        
         color:aqua;
         border: none;
         padding: 0;
