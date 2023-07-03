@@ -50,6 +50,7 @@ export default {
 }
 </script>
 
+
 <style>
 #app, .modals {
   font-family: Avenir, Helvetica, Arial, sans-serif;
